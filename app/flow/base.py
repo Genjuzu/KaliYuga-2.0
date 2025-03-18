@@ -9,6 +9,7 @@ from app.agent.base import BaseAgent
 
 class FlowType(str, Enum):
     PLANNING = "planning"
+    PENTEST = "pentest"
 
 
 class BaseFlow(BaseModel, ABC):

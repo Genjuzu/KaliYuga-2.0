@@ -194,3 +194,52 @@ cython_debug/
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# Virtuelle Umgebungen
+venv/
+env/
+ENV/
+.env
+.venv
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Kali Linux spezifisch
+*.log
+*.pcap
+*.cap
+*.nmap
+*.xml
+*.json
+*.html
+*.pdf
+*.txt
+!requirements.txt
+!README.md
+
+# Metasploit
+msf.rc
+msf.log
+*.rc
+*.log
+
+# Burp Suite
+burp.log
+burp.xml
+burp.json
+
+# Wireshark
+*.pcapng
+*.cap
+*.pcap
+
+# Projekt-spezifisch
+config/
+reports/
+output/
+temp/

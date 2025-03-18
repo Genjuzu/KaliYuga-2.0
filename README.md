@@ -1,3 +1,115 @@
+# OpenManus PenTest Agent
+
+Ein autonomer, KI-gesteuerter Penetration Testing Agent, der Kali Linux und professionelle Sicherheitstools nutzt.
+
+## 🎯 Projektziel
+
+OpenManus PenTest ist ein fortschrittlicher, autonomer Agent für Penetrationstests, der:
+
+- Selbstständig und strategisch Penetrationstests durchführt
+- Professionelle Penetrationstest-Methoden anwendet
+- Kali Linux Tools intelligent nutzt
+- Ergebnisse dokumentiert und interpretiert
+- Menschliche Kontrolle zulässt (Human-in-the-Loop)
+
+## 🛠️ Funktionen
+
+### 1️⃣ Netzwerk-Penetration
+- WLAN-Angriffe (WEP, WPA/WPA2)
+- Man-in-the-Middle (MitM)
+- DNS-Spoofing
+- Port Scanning & Firewall-Evasion
+
+### 2️⃣ Web-Angriffe
+- SQL-Injections
+- XSS (Stored, Reflected, DOM-based)
+- CSRF, Open Redirects
+- API Testing & Exploitation
+
+### 3️⃣ Exploitation & Privilege Escalation
+- OS Exploits
+- Privilege Escalation
+- Exploit-Entwicklung
+- Social Engineering
+
+### 4️⃣ Post-Exploitation
+- C2 Frameworks
+- Malware Injection
+- Credential Dumping
+- Persistence Techniques
+
+### 5️⃣ Cloud & Container Security
+- AWS & Azure Penetration Testing
+- Docker & Kubernetes Security
+- Serverless Exploitation
+
+## 📋 Voraussetzungen
+
+- Python 3.8+
+- Kali Linux (empfohlen) oder kompatibles System
+- Docker (optional, für Container-basierte Tests)
+
+## 🚀 Installation
+
+1. Repository klonen:
+```bash
+git clone https://github.com/yourusername/openmanus-pentest.git
+cd openmanus-pentest
+```
+
+2. Virtuelle Umgebung erstellen und aktivieren:
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# oder
+.\venv\Scripts\activate  # Windows
+```
+
+3. Abhängigkeiten installieren:
+```bash
+pip install -r requirements.txt
+```
+
+## 💻 Verwendung
+
+### Standard-Modus
+```bash
+python main.py
+```
+
+### Flow-basierter Modus
+```bash
+python run_flow.py
+```
+
+## 🔒 Sicherheitshinweise
+
+- Dieses Tool ist ausschließlich für autorisierte Penetrationstests gedacht
+- Verwenden Sie es nur in Umgebungen, die Sie besitzen oder testen dürfen
+- Beachten Sie alle relevanten Gesetze und Vorschriften
+- Dokumentieren Sie alle Tests und erhalten Sie schriftliche Genehmigungen
+
+## 📝 Lizenz
+
+MIT License - siehe [LICENSE](LICENSE) für Details
+
+## 🤝 Beitragen
+
+Beiträge sind willkommen! Bitte lesen Sie unsere [Contributing Guidelines](CONTRIBUTING.md) für Details.
+
+## 📞 Support
+
+Bei Fragen oder Problemen:
+- Öffnen Sie ein Issue
+- Kontaktieren Sie das Entwicklungsteam
+- Besuchen Sie unsere [Dokumentation](docs/)
+
+## 🙏 Danksagungen
+
+- Kali Linux Team
+- Open Source Security Community
+- Alle Mitwirkenden und Unterstützer
+
 <p align="center">
   <img src="assets/logo.jpg" width="200"/>
 </p>

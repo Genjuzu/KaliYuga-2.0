@@ -3,6 +3,15 @@ from typing import Dict, List, Union
 from app.agent.base import BaseAgent
 from app.flow.base import BaseFlow, FlowType
 from app.flow.planning import PlanningFlow
+from app.flow.pentest import PenTestFlow
+
+
+# Erweitere den FlowType um PENTEST
+class FlowType(FlowType):  # type: ignore
+    """Erweiterte Aufzählung der verfügbaren Flow-Typen."""
+    
+    PLANNING = "planning"
+    PENTEST = "pentest"
 
 
 class FlowFactory:
@@ -16,6 +25,7 @@ class FlowFactory:
     ) -> BaseFlow:
         flows = {
             FlowType.PLANNING: PlanningFlow,
+            FlowType.PENTEST: PenTestFlow,  # Füge PenTestFlow hinzu
         }
 
         flow_class = flows.get(flow_type)
